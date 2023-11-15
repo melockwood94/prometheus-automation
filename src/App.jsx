@@ -1,15 +1,11 @@
 import './App.css'
 import { Routes, Route, Link } from 'react-router-dom'
+import Header from './Components/Header/Header'
 
 function App() {
   return (
     <>
-    <header>
-      <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
-      </nav>
-    </header>
+    <Header />
 
     <Routes>
       <Route path="/" element={<Home />} />
@@ -18,7 +14,7 @@ function App() {
       <h1>Hello World</h1>
 
     <footer>
-      
+
     </footer>
     </>
   )
