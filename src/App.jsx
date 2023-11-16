@@ -1,21 +1,24 @@
 import './App.css'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Header from './Components/Header/Header'
 
 function App() {
   return (
     <>
-    <Header />
+    <div id="app">
+      <Header />
 
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      
       <h1>Hello World</h1>
 
-    <footer>
+      <footer>
 
-    </footer>
+      </footer>
+    </div>
     </>
   )
 }
