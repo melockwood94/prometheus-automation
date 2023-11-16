@@ -1,6 +1,7 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Header from './Components/Header/Header'
+import Home from './Pages/Home/Home'
 
 function App() {
   return (
@@ -8,25 +9,17 @@ function App() {
     <div id="app">
       <Header />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-      
-      <h1>Hello World</h1>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </main>
 
       <footer>
 
       </footer>
     </div>
-    </>
-  )
-}
-
-function Home() {
-  return (
-    <>
-    <h1>Home</h1>
     </>
   )
 }

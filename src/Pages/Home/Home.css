@@ -1,0 +1,10 @@
+.content-section {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 700px) {
+    .content-section {
+        flex-direction: column;
+    }
+}
