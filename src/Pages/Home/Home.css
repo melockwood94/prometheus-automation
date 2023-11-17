@@ -16,15 +16,10 @@
     flex-direction: column;
 }
 
-.content-block__newsletter-form {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-}
-
 @media screen and (max-width: 700px) {
     .content-block--horizontal {
         flex-direction: column;
+        gap: 16px;
+        text-align: center;
     }
 }

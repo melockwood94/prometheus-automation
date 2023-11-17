@@ -7,8 +7,6 @@ function Navbar() {
             <NavLink className="nav-item nav-link" to='/'>Home</NavLink>
 
             <NavLink className="nav-item nav-link" to='/about'>About</NavLink>
-
-            <NavLink className="nav-item nav-link" to='/blog'>Blog</NavLink>
         </nav>
         </>
     )
