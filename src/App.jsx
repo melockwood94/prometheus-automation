@@ -1,37 +1,28 @@
 import './App.css'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Header from './Components/Header/Header'
+import Home from './Pages/Home/Home'
+import Contact from './Pages/Contact/Contact'
+import About from './Pages/About/About'
 
 function App() {
   return (
     <>
-    <Header />
+    <div id="app">
+      <Header />
 
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-    </Routes>
-      <h1>Hello World</h1>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
 
-    <footer>
+      <footer>
 
-    </footer>
-    </>
-  )
-}
-
-function Home() {
-  return (
-    <>
-    <h1>Home</h1>
-    </>
-  )
-}
-
-function About() {
-  return (
-    <>
-    <h1>About</h1>
+      </footer>
+    </div>
     </>
   )
 }

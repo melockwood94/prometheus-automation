@@ -1,0 +1,11 @@
+.contact-form {
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.contact-form__submit {
+    margin-top: 8px;
+    float: right;
+    width: 250px;
+}

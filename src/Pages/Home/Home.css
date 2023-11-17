@@ -1,0 +1,25 @@
+.content-block {
+    display: flex;
+    align-items: center;
+    padding:16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: #ffffff;
+    justify-content: space-around;
+}
+
+.content-block--horizontal {
+    flex-direction: row;
+}
+
+.content-block--vertical {
+    flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+    .content-block--horizontal {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+}
