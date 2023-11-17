@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Logo() {
     const [width, setWidth] = useState(window.innerWidth);
-    const breakpoint = 700;
+    const breakpoint = 800;
 
     useEffect(() => {
         const handleResizeWindow = () => setWidth(window.innerWidth);
@@ -14,7 +14,7 @@ function Logo() {
     return (
         <>
         <Link to="/" style={{textDecoration: "none"}}>
-            <h1 className="logo">{ width > breakpoint ? "[Rogue, Array]" : "[R,A]" }</h1>
+            <h1 className="logo">{ width > breakpoint ? "Prometheus Automation" : "P.A." }</h1>
         </Link>
         </>
     )

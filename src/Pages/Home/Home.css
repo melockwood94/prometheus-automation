@@ -6,9 +6,6 @@
     margin-bottom: 16px;
     background-color: #ffffff;
     justify-content: space-around;
-    border-bottom: solid;
-    border-width: 1px;
-    border-color: rgba(0, 0, 0, .25);
 }
 
 .content-block--horizontal {
